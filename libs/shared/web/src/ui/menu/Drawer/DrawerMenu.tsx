@@ -1,6 +1,6 @@
 import { mdiClose } from '@mdi/js';
 import Icon from '@mdi/react';
-import { Box, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Box, Divider, Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,10 +37,10 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({ open, onClose, drawerMenuItemLi
         <Divider />
         <List>
           {drawerMenuItemList.map((item) => (
-            <ListItem button key={item.text} onClick={() => handleNavigation(item.path)}>
+            <ListItemButton key={item.text} onClick={() => handleNavigation(item.path)}>
               <ListItemIcon><Icon path={item.icon} size={1} /></ListItemIcon>
               <ListItemText primary={item.text} />
-            </ListItem>
+            </ListItemButton>
           ))}
         </List>
       </Box>

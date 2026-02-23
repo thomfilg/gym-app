@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Typography, Paper, Box, Grid, Card, CardContent } from '@mui/material';
+import { Container, Typography, Paper, Box, Card, CardContent } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 
 const Analytics: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Analytics: React.FC = () => {
         </Typography>
 
         <Grid container spacing={3} sx={{ mt: 2 }}>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Card>
               <CardContent>
                 <Typography variant="h6" gutterBottom>
@@ -26,7 +27,7 @@ const Analytics: React.FC = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Card>
               <CardContent>
                 <Typography variant="h6" gutterBottom>
@@ -42,7 +43,7 @@ const Analytics: React.FC = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Card>
               <CardContent>
                 <Typography variant="h6" gutterBottom>
@@ -58,7 +59,7 @@ const Analytics: React.FC = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid size={12}>
             <Paper sx={{ p: 3 }}>
               <Typography variant="h6" gutterBottom>
                 Research Performance Overview

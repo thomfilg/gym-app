@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { esES } from '@mui/material/locale';
-import { StyledEngineProvider, ThemeOptions, createTheme } from '@mui/material/styles';
+import { ThemeOptions, createTheme } from '@mui/material/styles';
 
 import { getPalette } from './palette';
 import { getComponentStyleOverride } from './styleOverride';
@@ -34,23 +33,19 @@ const getTheme = () => {
   };
   const theme = createTheme(themeOptions, esES);
 
-  // @ts-ignore
-  theme.shadows[25] = '0px 10px 10px -15px #0005';
-  // @ts-ignore
-  theme.shadows[26] = '0px 15px 10px -15px #0003';
-  // @ts-ignore
-  theme.shadows[27] = '0px 15px 12px -15px #0004';
+  // Custom shadow indices beyond MUI's 25-element tuple (runtime works, strict types don't)
+  (theme.shadows as string[])[25] = '0px 10px 10px -15px #0005';
+  (theme.shadows as string[])[26] = '0px 15px 10px -15px #0003';
+  (theme.shadows as string[])[27] = '0px 15px 12px -15px #0004';
   return theme;
 };
 
 export function MUITheme({ children }: { children: React.ReactNode }) {
   const theme = getTheme();
   return (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        {children}
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
   );
 }
