@@ -1,0 +1,23 @@
+{
+  "extends": ["../../.eslintrc.js"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "no-empty": "warn",
+        "no-constant-condition": "warn",
+        "@typescript-eslint/no-this-alias": "warn",
+        "@typescript-eslint/no-unnecessary-type-constraint": "warn"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

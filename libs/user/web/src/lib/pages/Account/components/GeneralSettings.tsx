@@ -4,7 +4,7 @@ import { IUser } from '@gym-app/user/types';
 import { mdiContentSaveOutline } from '@mdi/js';
 import Icon from '@mdi/react';
 import Card from '@mui/material/Card';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import { Stack } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 

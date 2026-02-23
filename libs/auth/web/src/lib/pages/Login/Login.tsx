@@ -1,7 +1,8 @@
 import { Form, FormContainerType } from '@gym-app/shared/web';
 import { AuthContext } from '@gym-app/user/web';
 import { mdiLogin } from '@mdi/js';
-import { Container, Grid } from '@mui/material';
+import { Container } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { EmailField, ForgotLink, PasswordField, SignupLink } from '../../components';
@@ -53,10 +54,10 @@ export default class Login extends React.Component<object, LoginState> {
 
             <Form.Button.Submit fullWidth title='Login' />
             <Grid container>
-              <Grid item xs>
+              <Grid size="grow">
                 <ForgotLink includeSubTitle={false} email={email} />
               </Grid>
-              <Grid item>
+              <Grid>
                 <SignupLink includeSubTitle={false} />
               </Grid>
             </Grid>
