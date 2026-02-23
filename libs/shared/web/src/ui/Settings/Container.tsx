@@ -4,7 +4,7 @@ import { Stack } from '@mui/system';
 import React from 'react';
 import { CardHeader } from '../Cards/CardHeader';
 
-interface ContainerProps {
+export interface ContainerProps {
   title: string;
   children: React.ReactNode | React.ReactNode[];
 }
