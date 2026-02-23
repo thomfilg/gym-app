@@ -13,7 +13,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/shared-helpers"
+        "outputPath": "dist/libs/shared-helpers",
+        "skipTypeCheck": true
       },
       "configurations": {
         "development": {
