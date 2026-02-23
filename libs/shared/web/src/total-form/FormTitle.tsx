@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-interface FormTitleProps {
+export interface FormTitleProps {
   title: string;
 }
 

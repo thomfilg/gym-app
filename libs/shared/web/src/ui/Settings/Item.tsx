@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { Stack } from '@mui/system';
 
-interface ItemProps {
+export interface ItemProps {
   title: string;
   subtitle: string;
   children?: React.ReactNode;
