@@ -197,6 +197,9 @@ importers:
       i18next-http-backend:
         specifier: ^2.6.1
         version: 2.6.1
+      immer:
+        specifier: ^10.1.1
+        version: 10.1.1
       joi:
         specifier: ^17.13.3
         version: 17.13.3
