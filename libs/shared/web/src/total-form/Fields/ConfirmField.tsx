@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { validators } from '../validators';
 import { InputFieldProps } from './InputField';
 
-interface ConfirmFieldProps {
+export interface ConfirmFieldProps {
   children: React.ReactNode;
   confirmLabel: string;
   confirmName: string;

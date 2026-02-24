@@ -1,7 +1,7 @@
 import { Button, ButtonOwnProps } from '@mui/material';
 import { useFormContext } from './FormContext';
 
-interface SubmitButtonProps {
+export interface SubmitButtonProps {
   children?: React.ReactNode;
   title?: string;
   color?: 'primary' | 'secondary';

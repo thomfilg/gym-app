@@ -1,0 +1,21 @@
+export { DataGrid } from './DataGrid';
+export type {
+  DataGridProps,
+  EditMode,
+  FilterMode,
+  GridColumn,
+  GridDensity,
+  GridEditing,
+  GridFilter,
+  GridFiltering,
+  GridPagination,
+  GridRowExpansion,
+  GridSelection,
+  GridSelectionMode,
+  GridSizeMode,
+  GridSort,
+  GridSorting,
+  PaginationMode,
+  SortDirection,
+  SortMode,
+} from './DataGrid.types';

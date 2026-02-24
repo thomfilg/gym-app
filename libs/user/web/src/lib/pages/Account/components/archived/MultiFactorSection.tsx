@@ -4,7 +4,7 @@ import Icon from '@mdi/react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import React from 'react';
@@ -17,7 +17,7 @@ export const MultiFactorSection: React.FC = React.memo(() => {
     <Card>
       <CardHeader title={t('MultiFactorSection.title')} />
       <Grid container spacing={5}>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Stack
             spacing={1}
             border={1}
@@ -51,7 +51,7 @@ export const MultiFactorSection: React.FC = React.memo(() => {
             </Button>
           </Stack>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
           <Stack
             spacing={1}
             border={1}
