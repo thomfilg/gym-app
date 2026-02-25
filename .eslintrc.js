@@ -44,7 +44,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['scripts/**/*.js', 'commitlint.config.js'],
+      files: ['scripts/**/*.js', '*.config.js', '.eslintrc.js'],
       env: { node: true },
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
