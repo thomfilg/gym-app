@@ -41,5 +41,14 @@ module.exports = {
     'react': {
       'version': 'detect'
     }
-  }
+  },
+  overrides: [
+    {
+      files: ['scripts/**/*.js', 'commitlint.config.js'],
+      env: { node: true },
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 };
